@@ -2,6 +2,7 @@
   "name": "@designable/formily-transformer",
   "version": "1.0.0-beta.45",
   "license": "MIT",
+  "type": "module",
   "main": "lib",
   "engines": {
     "npm": ">=3.0.0"

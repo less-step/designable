@@ -99,6 +99,7 @@ export const useSandbox = (props: React.PropsWithChildren<ISandboxProps>) => {
 if (globalThisPolyfill.frameElement) {
   //解决iframe内嵌如果iframe被移除，内部React无法回收内存的问题
   globalThisPolyfill.addEventListener('unload', () => {
+    // eslint-disable-next-line react/no-deprecated
     ReactDOM.unmountComponentAtNode(document.getElementById('__SANDBOX_ROOT__'))
   })
 }
@@ -109,6 +110,7 @@ export const useSandboxScope = () => {
 
 export const renderSandboxContent = (render: (scope?: any) => JSX.Element) => {
   if (isFn(render)) {
+    // eslint-disable-next-line react/no-deprecated
     ReactDOM.render(
       render(useSandboxScope()),
       document.getElementById('__SANDBOX_ROOT__')

@@ -125,7 +125,7 @@ export const MonacoInput: React.FC<MonacoInputProps> & {
   ) => {
     editorRef.current = editor
     monacoRef.current = monaco
-    onMount?.(editor, monaco)
+    onMount?.(editor as any, monaco as any)
     const model = editor.getModel()
     const currentValue = editor.getValue()
     model['getDesignerLanguage'] = () => computedLanguage.current
@@ -315,7 +315,7 @@ export const MonacoInput: React.FC<MonacoInputProps> & {
           value={input}
           width="100%"
           height="100%"
-          onMount={onMountHandler}
+          onMount={onMountHandler as any}
         />
       </div>
       {renderHelpCode()}

@@ -45,6 +45,9 @@ export class Rect implements IRect {
   y = 0
   width = 0
   height = 0
+  toJSON() {
+    return JSON.stringify(this)
+  }
   constructor(x: number, y: number, width: number, height: number) {
     this.x = x
     this.y = y
@@ -83,6 +86,7 @@ export interface IRect {
   y: number
   width: number
   height: number
+  toJSON: () => string
 }
 
 export enum RectQuadrant {

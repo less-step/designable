@@ -1,4 +1,3 @@
-import 'antd/dist/antd.less'
 import React, { useMemo } from 'react'
 import ReactDOM from 'react-dom'
 import {
@@ -230,4 +229,5 @@ const App = () => {
   )
 }
 
+// eslint-disable-next-line react/no-deprecated
 ReactDOM.render(<App />, document.getElementById('root'))

@@ -1,12 +1,11 @@
-import typescript from 'rollup-plugin-typescript2'
-import resolve from 'rollup-plugin-node-resolve'
+import typescript from '@rollup/plugin-typescript'
+import resolve from '@rollup/plugin-node-resolve'
 import postcss from 'rollup-plugin-postcss'
 import commonjs from '@rollup/plugin-commonjs'
 import NpmImport from 'less-plugin-npm-import'
 import externalGlobals from 'rollup-plugin-external-globals'
 import { terser } from 'rollup-plugin-terser'
 import path from 'path'
-
 const presets = () => {
   const externals = {
     antd: 'Antd',
@@ -35,20 +34,19 @@ const presets = () => {
     '@designable/react-settings-form': 'Designable.ReactSettingsForm',
   }
   return [
+    commonjs(),
+    resolve(),
     typescript({
       tsconfig: './tsconfig.json',
-      tsconfigOverride: {
-        compilerOptions: {
-          module: 'ESNext',
-          declaration: false,
-        },
+      compilerOptions: {
+        module: 'ESNext',
+        declaration: false,
       },
     }),
-    resolve(),
     postcss({
       extract: true,
       minimize: true,
-      // extensions: ['.css', '.less', '.sass'],
+      extensions: ['.css', '.less', '.sass'],
       use: {
         less: {
           plugins: [new NpmImport({ prefix: '~' })],
@@ -58,7 +56,6 @@ const presets = () => {
         stylus: {},
       },
     }),
-    commonjs(),
     externalGlobals(externals),
   ]
 }

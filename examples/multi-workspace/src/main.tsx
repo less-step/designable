@@ -1,5 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
+
 import {
   Designer,
   IconWidget,
@@ -29,7 +30,6 @@ import {
 import { Content } from './content'
 import { Space, Button, Radio } from 'antd'
 import { GithubOutlined } from '@ant-design/icons'
-import 'antd/dist/antd.less'
 
 const RootBehavior = createBehavior({
   name: 'Root',
@@ -322,7 +322,7 @@ const Actions = observer(() => (
 ))
 
 const engine = createDesigner()
-window.engine = engine
+;(window as any).engine = engine
 const App = () => {
   return (
     <Designer engine={engine}>
@@ -404,4 +404,5 @@ const App = () => {
   )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+let root = createRoot(document.getElementById('root'))
+root.render(<App />)

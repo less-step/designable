@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import { copy, readFile, writeFile, existsSync } from 'fs-extra'
+import fsExtra from 'fs-extra'
 import glob from 'glob'
-
+const { copy, readFile, writeFile, existsSync } = fsExtra
 export type CopyBaseOptions = Record<'esStr' | 'libStr', string>
 
 const importLibToEs = async ({

@@ -1,4 +1,5 @@
-import { KeyCode, Shortcut, TreeNode } from '../models'
+import { Shortcut, TreeNode } from '../models'
+import { KeyCode } from '@designable/shared'
 
 const findBottomLastChild = (node: TreeNode) => {
   if (!node) return node

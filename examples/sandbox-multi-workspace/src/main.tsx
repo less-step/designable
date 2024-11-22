@@ -29,7 +29,6 @@ import {
 import { Space, Button, Radio } from 'antd'
 import { GithubOutlined } from '@ant-design/icons'
 import { Sandbox } from '@designable/react-sandbox'
-import 'antd/dist/antd.less'
 
 const RootBehavior = createBehavior({
   name: 'Root',
@@ -360,7 +359,8 @@ const App = () => {
                         'https://unpkg.com/moment/min/moment-with-locales.js',
                         'https://unpkg.com/react/umd/react.production.min.js',
                         'https://unpkg.com/react-dom/umd/react-dom.production.min.js',
-                        'https://unpkg.com/antd/dist/antd-with-locales.min.js',
+                        'https://cdn.bootcdn.net/ajax/libs/dayjs/1.11.12/dayjs.min.js',
+                        'https://unpkg.com/antd@5.22.2/dist/antd-with-locales.min.js',
                         './sandbox.bundle.js',
                       ]}
                     />
@@ -396,7 +396,8 @@ const App = () => {
                         'https://unpkg.com/moment/min/moment-with-locales.js',
                         'https://unpkg.com/react/umd/react.production.min.js',
                         'https://unpkg.com/react-dom/umd/react-dom.production.min.js',
-                        'https://unpkg.com/antd/dist/antd-with-locales.min.js',
+                        'https://cdn.bootcdn.net/ajax/libs/dayjs/1.11.12/dayjs.min.js',
+                        'https://unpkg.com/antd@5.22.2/dist/antd-with-locales.min.js',
                         './sandbox.bundle.js',
                       ]}
                     />
@@ -427,4 +428,5 @@ const App = () => {
   )
 }
 
+// eslint-disable-next-line react/no-deprecated
 ReactDOM.render(<App />, document.getElementById('root'))

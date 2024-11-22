@@ -2,6 +2,7 @@
   "name": "@designable/formily-antd",
   "version": "1.0.0-beta.45",
   "license": "MIT",
+  "type": "module",
   "main": "lib",
   "module": "esm",
   "repository": {
@@ -17,47 +18,44 @@
     "npm": ">=3.0.0"
   },
   "scripts": {
-    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && ts-node copy",
+    "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && tsx copy",
     "build:cjs": "tsc --project tsconfig.build.json",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
-    "build:playground": "webpack-cli --config playground/webpack.prod.ts",
-    "start": "webpack-dev-server --config playground/webpack.dev.ts"
+    "build:playground": "webpack-cli --config playground/webpack.prod.cjs",
+    "start": "webpack-dev-server --config playground/webpack.dev.cjs"
   },
   "devDependencies": {
     "@designable/react-settings-form": "1.0.0-beta.45",
-    "@formily/antd": "^2.0.2",
+    "@formily/antd-v5": "^1.0.0",
     "@formily/core": "^2.0.2",
     "@formily/react": "^2.0.2",
     "@formily/reactive": "^2.0.2",
     "@formily/shared": "^2.0.2",
     "autoprefixer": "^9.0",
-    "file-loader": "^5.0.2",
+    "file-loader": "^6.0.0",
     "fs-extra": "^8.1.0",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^1.6.0",
-    "monaco-editor-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.0.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "monaco-editor-webpack-plugin": "^7.0.0",
     "raw-loader": "^4.0.0",
     "react-monaco-editor": "^0.43.0",
-    "style-loader": "^1.1.3",
-    "ts-loader": "^7.0.4",
-    "typescript": "4.1.5",
-    "webpack": "^4.41.5",
-    "webpack-bundle-analyzer": "^3.9.0",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.0.0",
+    "typescript": "^5.0.0",
+    "webpack": "^5.0.0",
+    "webpack-bundle-analyzer": "^4.0.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^5.0.0"
   },
   "peerDependencies": {
-    "@formily/antd": "^2.0.2",
     "@formily/core": "^2.0.2",
     "@formily/react": "^2.0.2",
     "@formily/reactive": "^2.0.2",
     "@formily/shared": "^2.0.2",
-    "@types/react": ">=16.8.0 || >=17.0.0",
-    "@types/react-dom": ">=16.8.0 || >=17.0.0",
-    "antd": "^4.0.0",
-    "react": ">=16.8.0 || >=17.0.0",
-    "react-dom": ">=16.8.0",
-    "react-is": ">=16.8.0 || >=17.0.0"
+    "antd": "^5.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-is": "^18.0.0"
   },
   "dependencies": {
     "@designable/core": "1.0.0-beta.45",
@@ -68,5 +66,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "2c44ae410a73f02735c63c6430e021a50e21f3ec"
+  "gitHead": "2c44ae410a73f02735c63c6430e021a50e21f3ec",
+  "overrides": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
 }

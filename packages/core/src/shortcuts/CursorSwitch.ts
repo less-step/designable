@@ -1,4 +1,5 @@
-import { CursorType, KeyCode, Shortcut } from '../models'
+import { KeyCode } from '@designable/shared'
+import { CursorType, Shortcut } from '../models'
 
 export const CursorSwitchSelection = new Shortcut({
   codes: [KeyCode.Shift, KeyCode.S],

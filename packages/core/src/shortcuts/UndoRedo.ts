@@ -1,4 +1,5 @@
-import { KeyCode, Shortcut } from '../models'
+import { Shortcut } from '../models'
+import { KeyCode } from '@designable/shared'
 
 export const UndoMutation = new Shortcut({
   codes: [

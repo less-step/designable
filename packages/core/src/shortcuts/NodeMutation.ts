@@ -1,4 +1,5 @@
-import { KeyCode, Shortcut, TreeNode } from '../models'
+import { Shortcut, TreeNode } from '../models'
+import { KeyCode } from '@designable/shared'
 
 /**
  * 快捷删除，快捷复制粘贴

@@ -3,6 +3,7 @@
   "version": "1.0.0-beta.45",
   "license": "MIT",
   "main": "lib",
+  "type": "module",
   "module": "esm",
   "repository": {
     "type": "git",
@@ -23,14 +24,14 @@
     "start": "webpack-dev-server --config playground/webpack.dev.ts"
   },
   "devDependencies": {
-    "@formily/antd": "^2.0.2",
+    "@formily/antd-v5": "^1.0.0",
     "@formily/core": "^2.0.2",
     "@formily/react": "^2.0.2",
     "@formily/shared": "^2.0.2",
     "antd": "^4.0.0"
   },
   "peerDependencies": {
-    "@formily/antd": "^2.0.2",
+    "@formily/antd-v5": "^1.0.0",
     "@formily/core": "^2.0.2",
     "@formily/react": "^2.0.2",
     "@formily/shared": "^2.0.2",
