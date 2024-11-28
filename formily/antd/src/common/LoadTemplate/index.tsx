@@ -1,5 +1,5 @@
 import React from 'react'
-import { NodeActionsWidget } from '@kep-platform/react'
+import { NodeActionsWidget } from '@kep-platform/designable-react'
 
 export interface ITemplateAction {
 	title: React.ReactNode

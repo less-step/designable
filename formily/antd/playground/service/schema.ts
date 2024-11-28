@@ -1,5 +1,5 @@
-import { Engine } from '@kep-platform/core'
-import { transformToSchema, transformToTreeNode } from '@kep-platform/formily-transformer'
+import { Engine } from '@kep-platform/designable-core'
+import { transformToSchema, transformToTreeNode } from '@kep-platform/designable-formily-transformer'
 import { message } from 'antd'
 
 export const saveSchema = (designer: Engine) => {

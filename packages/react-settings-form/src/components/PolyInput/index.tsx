@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Button } from 'antd'
-import { usePrefix, IconWidget } from '@kep-platform/react'
+import { usePrefix, IconWidget } from '@kep-platform/designable-react'
 import cls from 'classnames'
 import './styles.less'
 

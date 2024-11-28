@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import { isStr, isPlainObj } from '@kep-platform/shared'
-import { GlobalRegistry, IDesignerMiniLocales } from '@kep-platform/core'
+import { isStr, isPlainObj } from '@kep-platform/designable-shared'
+import { GlobalRegistry, IDesignerMiniLocales } from '@kep-platform/designable-core'
 import { observer } from '@formily/reactive-react'
 
 export interface ITextWidgetProps {

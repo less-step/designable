@@ -1,5 +1,5 @@
 import React from 'react'
-import { TreeNode } from '@kep-platform/core'
+import { TreeNode } from '@kep-platform/designable-core'
 import { IconWidget } from '../IconWidget'
 import { usePrefix } from '../../hooks'
 import { Button } from 'antd'

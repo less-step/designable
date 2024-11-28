@@ -1,4 +1,4 @@
-import { calcRectOfAxisLineSegment, ILineSegment, IPoint, calcOffsetOfSnapLineSegmentToEdge, Rect } from '@kep-platform/shared'
+import { calcRectOfAxisLineSegment, ILineSegment, IPoint, calcOffsetOfSnapLineSegmentToEdge, Rect } from '@kep-platform/designable-shared'
 import { TreeNode } from './TreeNode'
 import { TransformHelper } from './TransformHelper'
 

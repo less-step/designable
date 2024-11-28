@@ -1,4 +1,4 @@
-import { isFn, KeyCode } from '@kep-platform/shared'
+import { isFn, KeyCode } from '@kep-platform/designable-shared'
 import { IEngineContext } from '../types'
 
 export { KeyCode }

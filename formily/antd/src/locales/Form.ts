@@ -1,4 +1,4 @@
-import { createLocales } from '@kep-platform/core'
+import { createLocales } from '@kep-platform/designable-core'
 import { Component } from './Component'
 
 export const Form = createLocales(Component, {

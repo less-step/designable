@@ -1,8 +1,8 @@
 import React, { useLayoutEffect, useRef, useState } from 'react'
 import { usePrefix, useViewport } from '../hooks'
 import { AuxToolWidget, EmptyWidget } from '../widgets'
-import { Viewport as ViewportType } from '@kep-platform/core'
-import { requestIdle, globalThisPolyfill } from '@kep-platform/shared'
+import { Viewport as ViewportType } from '@kep-platform/designable-core'
+import { requestIdle, globalThisPolyfill } from '@kep-platform/designable-shared'
 import cls from 'classnames'
 export interface IViewportProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'placeholder'> {
 	placeholder?: React.ReactNode

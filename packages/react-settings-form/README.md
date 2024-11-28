@@ -1,1 +1,1 @@
-# @kep-platform/react-settings-form
+# @kep-platform/designable-react-settings-form

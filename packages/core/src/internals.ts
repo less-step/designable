@@ -1,5 +1,5 @@
-import { each, isPlainObj } from '@kep-platform/shared'
-import { globalThisPolyfill } from '@kep-platform/shared'
+import { each, isPlainObj } from '@kep-platform/designable-shared'
+import { globalThisPolyfill } from '@kep-platform/designable-shared'
 
 export const lowerSnake = (str: string) => {
 	return String(str).replace(/\s+/g, '_').toLocaleLowerCase()

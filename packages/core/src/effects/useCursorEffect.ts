@@ -1,6 +1,6 @@
 import { Engine, CursorStatus } from '../models'
 import { MouseMoveEvent, DragStartEvent, DragMoveEvent, DragStopEvent } from '../events'
-import { requestIdle } from '@kep-platform/shared'
+import { requestIdle } from '@kep-platform/designable-shared'
 
 export const useCursorEffect = (engine: Engine) => {
 	engine.subscribeTo(MouseMoveEvent, (event) => {

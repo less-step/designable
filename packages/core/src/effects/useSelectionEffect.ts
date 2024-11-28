@@ -1,6 +1,6 @@
 import { Engine, CursorStatus } from '../models'
 import { MouseClickEvent } from '../events'
-import { KeyCode, Point } from '@kep-platform/shared'
+import { KeyCode, Point } from '@kep-platform/designable-shared'
 
 export const useSelectionEffect = (engine: Engine) => {
 	engine.subscribeTo(MouseClickEvent, (event) => {

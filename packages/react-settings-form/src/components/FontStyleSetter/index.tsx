@@ -1,5 +1,5 @@
 import React from 'react'
-import { usePrefix, IconWidget } from '@kep-platform/react'
+import { usePrefix, IconWidget } from '@kep-platform/designable-react'
 import { useField, Field, observer } from '@formily/react'
 import { Select, Radio, NumberPicker } from '@formily/antd-v5'
 import { FoldItem } from '../FoldItem'

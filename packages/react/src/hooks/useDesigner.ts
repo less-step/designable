@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react'
-import { Engine } from '@kep-platform/core'
+import { Engine } from '@kep-platform/designable-core'
 import { DesignerEngineContext } from '../context'
-import { isFn, globalThisPolyfill } from '@kep-platform/shared'
+import { isFn, globalThisPolyfill } from '@kep-platform/designable-shared'
 export interface IEffects {
 	(engine: Engine): void
 }

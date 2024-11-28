@@ -1,6 +1,6 @@
 import React from 'react'
-import { createBehavior, createResource } from '@kep-platform/core'
-import { DnFC } from '@kep-platform/react'
+import { createBehavior, createResource } from '@kep-platform/designable-core'
+import { DnFC } from '@kep-platform/designable-react'
 import { createFieldSchema } from '../Field'
 import { Container } from '../../common/Container'
 import { AllLocales } from '../../locales'

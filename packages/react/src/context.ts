@@ -1,5 +1,5 @@
 import { createContext } from 'react'
-import { TreeNode, Engine } from '@kep-platform/core'
+import { TreeNode, Engine } from '@kep-platform/designable-core'
 import { IDesignerLayoutContext, IWorkspaceContext, IDesignerComponents } from './types'
 
 export const DesignerComponentsContext = createContext<IDesignerComponents>({})

@@ -3,7 +3,7 @@
 	"compilerOptions": {
 		"outDir": "./lib",
 		"paths": {
-			"@kep-platform/*": ["../../packages/*", "../../formily/*"]
+			"@kep-platform/designable-*": ["../../packages/*", "../../formily/*"]
 		},
 		"declaration": true
 	}

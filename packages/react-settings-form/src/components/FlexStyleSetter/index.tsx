@@ -1,7 +1,7 @@
 import React from 'react'
 import { Field, useField, observer } from '@formily/react'
 import { Radio } from '@formily/antd-v5'
-import { usePrefix, IconWidget } from '@kep-platform/react'
+import { usePrefix, IconWidget } from '@kep-platform/designable-react'
 import { InputItems } from '../InputItems'
 import cls from 'classnames'
 import './styles.less'

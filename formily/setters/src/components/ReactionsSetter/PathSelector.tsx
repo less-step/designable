@@ -1,6 +1,6 @@
 import React from 'react'
-import { TreeNode } from '@kep-platform/core'
-import { useSelectedNode } from '@kep-platform/react'
+import { TreeNode } from '@kep-platform/designable-core'
+import { useSelectedNode } from '@kep-platform/designable-react'
 import { TreeSelectProps, TreeSelect } from 'antd'
 
 export interface IPathSelectorProps extends Omit<TreeSelectProps<any>, 'onChange'> {

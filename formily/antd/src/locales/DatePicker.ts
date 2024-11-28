@@ -1,4 +1,4 @@
-import { createLocales } from '@kep-platform/core'
+import { createLocales } from '@kep-platform/designable-core'
 
 export const DatePicker = {
 	'zh-CN': {

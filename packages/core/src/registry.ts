@@ -1,4 +1,4 @@
-import { each } from '@kep-platform/shared'
+import { each } from '@kep-platform/designable-shared'
 import { Path } from '@formily/path'
 import { observable } from '@formily/reactive'
 import { IDesignerBehaviorStore, IDesignerIconsStore, IDesignerLocaleStore, IDesignerLanguageStore, IDesignerBehaviors, IDesignerLocales, IDesignerIcons, IBehaviorLike, IBehavior } from './types'

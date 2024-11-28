@@ -1,5 +1,5 @@
 import React from 'react'
-import { ComponentTreeWidget, useTreeNode } from '@kep-platform/react'
+import { ComponentTreeWidget, useTreeNode } from '@kep-platform/designable-react'
 import { observer } from '@formily/reactive-react'
 
 export const Content = () => (

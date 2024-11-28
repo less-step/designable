@@ -1,4 +1,4 @@
-import { getKeyCodeFromEvent, KeyCode } from '@kep-platform/shared'
+import { getKeyCodeFromEvent, KeyCode } from '@kep-platform/designable-shared'
 import { IEngineContext } from '../../types'
 
 export class AbstractKeyboardEvent {

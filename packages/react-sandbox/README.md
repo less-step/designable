@@ -1,1 +1,1 @@
-# @kep-platform/react-sandbox
+# @kep-platform/designable-react-sandbox

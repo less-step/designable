@@ -1,7 +1,7 @@
 import React, { Fragment, useRef } from 'react'
 import { Button, InputNumber } from 'antd'
 import { observer } from '@formily/reactive-react'
-import { CursorType, ScreenType } from '@kep-platform/core'
+import { CursorType, ScreenType } from '@kep-platform/designable-core'
 import { useCursor, useHistory, useScreen, usePrefix, useWorkbench } from '../../hooks'
 import { IconWidget } from '../IconWidget'
 import cls from 'classnames'

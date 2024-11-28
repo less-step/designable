@@ -1,4 +1,4 @@
-import { IEventProps, Event } from '@kep-platform/shared'
+import { IEventProps, Event } from '@kep-platform/designable-shared'
 import { ISchema } from '@formily/json-schema'
 import { Engine, ITreeNode, ScreenType, Shortcut, Viewport, Workbench, Workspace, TreeNode } from './models'
 

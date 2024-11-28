@@ -1,4 +1,4 @@
-import { IconWidget, TextWidget } from '@kep-platform/react'
+import { IconWidget, TextWidget } from '@kep-platform/designable-react'
 import { observer } from '@formily/reactive-react'
 import { clone, toArr } from '@formily/shared'
 import React from 'react'

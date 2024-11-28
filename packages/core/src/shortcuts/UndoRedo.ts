@@ -1,5 +1,5 @@
 import { Shortcut } from '../models'
-import { KeyCode } from '@kep-platform/shared'
+import { KeyCode } from '@kep-platform/designable-shared'
 
 export const UndoMutation = new Shortcut({
 	codes: [

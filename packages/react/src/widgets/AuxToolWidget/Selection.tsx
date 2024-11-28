@@ -3,7 +3,7 @@ import { Helpers } from './Helpers'
 import { ResizeHandler } from './ResizeHandler'
 import { useSelection, useValidNodeOffsetRect, useTree, useCursor, useMoveHelper, usePrefix, useDesigner } from '../../hooks'
 import { observer } from '@formily/reactive-react'
-import { TreeNode } from '@kep-platform/core'
+import { TreeNode } from '@kep-platform/designable-core'
 import { TranslateHandler } from './TranslateHandler'
 export interface ISelectionBoxProps {
 	node: TreeNode

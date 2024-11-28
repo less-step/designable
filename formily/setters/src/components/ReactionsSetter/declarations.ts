@@ -1,4 +1,4 @@
-import { MonacoInput, getNpmCDNRegistry } from '@kep-platform/react-settings-form'
+import { MonacoInput, getNpmCDNRegistry } from '@kep-platform/designable-react-settings-form'
 
 export interface IDependency {
 	name: string

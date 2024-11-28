@@ -1,5 +1,5 @@
-import { AppendNodeEvent, TreeNode } from '@kep-platform/core'
-import { useDesigner } from '@kep-platform/react'
+import { AppendNodeEvent, TreeNode } from '@kep-platform/designable-core'
+import { useDesigner } from '@kep-platform/designable-react'
 import { matchComponent, matchChildComponent } from '../shared'
 
 export const useDropTemplate = (name: string, getChildren: (source: TreeNode[]) => TreeNode[]) => {

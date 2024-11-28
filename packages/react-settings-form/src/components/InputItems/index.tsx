@@ -1,5 +1,5 @@
 import React, { ReactNode, useContext } from 'react'
-import { usePrefix, IconWidget } from '@kep-platform/react'
+import { usePrefix, IconWidget } from '@kep-platform/designable-react'
 import cls from 'classnames'
 import './styles.less'
 

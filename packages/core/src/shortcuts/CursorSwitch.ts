@@ -1,4 +1,4 @@
-import { KeyCode } from '@kep-platform/shared'
+import { KeyCode } from '@kep-platform/designable-shared'
 import { CursorType, Shortcut } from '../models'
 
 export const CursorSwitchSelection = new Shortcut({

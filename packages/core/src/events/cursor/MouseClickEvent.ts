@@ -1,4 +1,4 @@
-import { ICustomEvent } from '@kep-platform/shared'
+import { ICustomEvent } from '@kep-platform/designable-shared'
 import { AbstractCursorEvent } from './AbstractCursorEvent'
 
 export class MouseClickEvent extends AbstractCursorEvent implements ICustomEvent {

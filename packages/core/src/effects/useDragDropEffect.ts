@@ -1,6 +1,6 @@
 import { Engine, ClosestPosition, CursorType, CursorDragType, TreeNode } from '../models'
 import { DragStartEvent, DragMoveEvent, DragStopEvent, ViewportScrollEvent } from '../events'
-import { Point } from '@kep-platform/shared'
+import { Point } from '@kep-platform/designable-shared'
 
 export const useDragDropEffect = (engine: Engine) => {
 	engine.subscribeTo(DragStartEvent, (event) => {

@@ -1,1 +1,1 @@
-# @kep-platform/playground
+# @kep-platform/designable-playground

@@ -1,6 +1,6 @@
 import React from 'react'
-import { TreeNode } from '@kep-platform/core'
-import { MonacoInput } from '@kep-platform/react-settings-form'
+import { TreeNode } from '@kep-platform/designable-core'
+import { MonacoInput } from '@kep-platform/designable-react-settings-form'
 import { isEmpty, isPlainObj } from '@formily/shared'
 
 export interface IMarkupSchemaWidgetProps {

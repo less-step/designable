@@ -1,8 +1,8 @@
 import { useContext } from 'react'
 import { useDesigner } from './useDesigner'
 import { WorkspaceContext } from '../context'
-import { Workspace } from '@kep-platform/core'
-import { globalThisPolyfill } from '@kep-platform/shared'
+import { Workspace } from '@kep-platform/designable-core'
+import { globalThisPolyfill } from '@kep-platform/designable-shared'
 
 export const useWorkspace = (id?: string): Workspace => {
 	const designer = useDesigner()

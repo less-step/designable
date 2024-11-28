@@ -1,8 +1,8 @@
-import { EventDriver } from '@kep-platform/shared'
+import { EventDriver } from '@kep-platform/designable-shared'
 import { Engine } from '../models/Engine'
 import { ViewportResizeEvent } from '../events'
 import { ResizeObserver } from '@juggle/resize-observer'
-import { globalThisPolyfill } from '@kep-platform/shared'
+import { globalThisPolyfill } from '@kep-platform/designable-shared'
 
 export class ViewportResizeDriver extends EventDriver<Engine> {
 	request = null

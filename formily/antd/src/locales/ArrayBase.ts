@@ -1,4 +1,4 @@
-import { GlobalRegistry } from '@kep-platform/core'
+import { GlobalRegistry } from '@kep-platform/designable-core'
 
 GlobalRegistry.registerDesignerLocales({
 	'zh-CN': {

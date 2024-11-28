@@ -1,4 +1,4 @@
-import { calcAutoScrollBasicInfo, IAutoScrollBasicInfo, IPoint, Point, scrollAnimate } from '@kep-platform/shared'
+import { calcAutoScrollBasicInfo, IAutoScrollBasicInfo, IPoint, Point, scrollAnimate } from '@kep-platform/designable-shared'
 import { DragMoveEvent, DragStartEvent, DragStopEvent } from '../events'
 import { CursorStatus, Engine, Viewport } from '../models'
 

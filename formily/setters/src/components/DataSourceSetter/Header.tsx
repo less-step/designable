@@ -1,4 +1,4 @@
-import { usePrefix } from '@kep-platform/react'
+import { usePrefix } from '@kep-platform/designable-react'
 import { observer } from '@formily/reactive-react'
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'

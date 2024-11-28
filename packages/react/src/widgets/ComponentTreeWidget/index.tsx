@@ -1,4 +1,4 @@
-import { GlobalRegistry, TreeNode } from '@kep-platform/core'
+import { GlobalRegistry, TreeNode } from '@kep-platform/designable-core'
 import { observer } from '@formily/reactive-react'
 import cls from 'classnames'
 import React, { Fragment, useEffect } from 'react'

@@ -1,6 +1,6 @@
 import React from 'react'
-import { ScreenType } from '@kep-platform/core'
-import { requestIdle } from '@kep-platform/shared'
+import { ScreenType } from '@kep-platform/designable-core'
+import { requestIdle } from '@kep-platform/designable-shared'
 import { observer } from '@formily/reactive-react'
 import { useScreen } from '../hooks'
 import { MobileSimulator, PCSimulator, ResponsiveSimulator } from '../simulators'

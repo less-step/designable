@@ -8,7 +8,7 @@ const getAlias = () => {
 	const packages = fs.readdirSync(packagesDir)
 	const pkg = fs.readJSONSync(path.resolve(__dirname, '../package.json'))
 	const deps = Object.entries(pkg.dependencies).reduce((deps, [key]) => {
-		if (key.includes('@kep-platform/')) {
+		if (key.includes('@kep-platform/designable-')) {
 			return deps
 		} else if (key.includes('react')) {
 			deps[key] = require.resolve(key)
@@ -26,7 +26,7 @@ const getAlias = () => {
 			const name = path.basename(_path)
 			return {
 				...buf,
-				[`@kep-platform/${name}$`]: `${_path}/src`,
+				[`@kep-platform/designable-${name}$`]: `${_path}/src`,
 			}
 		}, deps)
 	return alias

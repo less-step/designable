@@ -1,4 +1,4 @@
-import { EventDriver } from '@kep-platform/shared'
+import { EventDriver } from '@kep-platform/designable-shared'
 import { KeyDownEvent, KeyUpEvent } from '../events'
 
 function filter(event: KeyboardEvent) {

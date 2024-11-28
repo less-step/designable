@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useField, observer } from '@formily/react'
-import { usePrefix, IconWidget } from '@kep-platform/react'
+import { usePrefix, IconWidget } from '@kep-platform/designable-react'
 import cls from 'classnames'
 import './styles.less'
 

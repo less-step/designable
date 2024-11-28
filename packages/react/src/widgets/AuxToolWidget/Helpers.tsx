@@ -1,5 +1,5 @@
 import React, { useRef, useState, useLayoutEffect } from 'react'
-import { TreeNode } from '@kep-platform/core'
+import { TreeNode } from '@kep-platform/designable-core'
 import { reaction } from '@formily/reactive'
 import { usePrefix, useViewport } from '../../hooks'
 import { Selector } from './Selector'

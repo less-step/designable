@@ -16,9 +16,9 @@ import {
 	ViewPanel,
 	SettingsPanel,
 	ComponentTreeWidget,
-} from '@kep-platform/react'
-import { SettingsForm, setNpmCDNRegistry } from '@kep-platform/react-settings-form'
-import { createDesigner, GlobalRegistry, Shortcut, KeyCode } from '@kep-platform/core'
+} from '@kep-platform/designable-react'
+import { SettingsForm, setNpmCDNRegistry } from '@kep-platform/designable-react-settings-form'
+import { createDesigner, GlobalRegistry, Shortcut, KeyCode } from '@kep-platform/designable-core'
 import { LogoWidget, ActionsWidget, PreviewWidget, SchemaEditorWidget, MarkupSchemaWidget } from './widgets'
 import { saveSchema } from './service'
 import {

@@ -1,6 +1,6 @@
 import React, { useRef, useContext, useEffect } from 'react'
-import { TreeNode, ClosestPosition, CursorStatus, DragMoveEvent } from '@kep-platform/core'
-import { isFn } from '@kep-platform/shared'
+import { TreeNode, ClosestPosition, CursorStatus, DragMoveEvent } from '@kep-platform/designable-core'
+import { isFn } from '@kep-platform/designable-shared'
 import { autorun } from '@formily/reactive'
 import { observer } from '@formily/reactive-react'
 import { usePrefix, useCursor, useSelection, useMoveHelper, useDesigner } from '../../hooks'

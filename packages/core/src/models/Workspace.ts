@@ -2,7 +2,7 @@ import { Engine } from './Engine'
 import { Viewport } from './Viewport'
 import { Operation, IOperation } from './Operation'
 import { History } from './History'
-import { uid, ICustomEvent, EventContainer } from '@kep-platform/shared'
+import { uid, ICustomEvent, EventContainer } from '@kep-platform/designable-shared'
 import { HistoryGotoEvent, HistoryRedoEvent, HistoryUndoEvent, HistoryPushEvent } from '../events'
 import { IEngineContext } from '../types'
 export interface IViewportMatcher {

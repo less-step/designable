@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { TreeNode } from '@kep-platform/core'
+import { TreeNode } from '@kep-platform/designable-core'
 import { useHover, useSelection, usePrefix } from '../../hooks'
 import { IconWidget } from '../IconWidget'
 import { NodeTitleWidget } from '../NodeTitleWidget'

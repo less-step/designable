@@ -1,4 +1,4 @@
-import { calcExtendsLineSegmentOfRect, calcDistanceOfSnapLineToEdges, LineSegment, Rect } from '@kep-platform/shared'
+import { calcExtendsLineSegmentOfRect, calcDistanceOfSnapLineToEdges, LineSegment, Rect } from '@kep-platform/designable-shared'
 import { SnapLine } from './SnapLine'
 import { TransformHelper } from './TransformHelper'
 import { TreeNode } from './TreeNode'

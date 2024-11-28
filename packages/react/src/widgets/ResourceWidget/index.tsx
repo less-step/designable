@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { isResourceHost, isResourceList, IResourceLike, IResource } from '@kep-platform/core'
-import { isFn } from '@kep-platform/shared'
+import { isResourceHost, isResourceList, IResourceLike, IResource } from '@kep-platform/designable-core'
+import { isFn } from '@kep-platform/designable-shared'
 import { observer } from '@formily/reactive-react'
 import { usePrefix } from '../../hooks'
 import { IconWidget } from '../IconWidget'

@@ -1,7 +1,7 @@
 import React from 'react'
-import { transformToSchema, transformToTreeNode } from '@kep-platform/formily-transformer'
-import { TreeNode, ITreeNode } from '@kep-platform/core'
-import { MonacoInput } from '@kep-platform/react-settings-form'
+import { transformToSchema, transformToTreeNode } from '@kep-platform/designable-formily-transformer'
+import { TreeNode, ITreeNode } from '@kep-platform/designable-core'
+import { MonacoInput } from '@kep-platform/designable-react-settings-form'
 
 export interface ISchemaEditorWidgetProps {
 	tree: TreeNode

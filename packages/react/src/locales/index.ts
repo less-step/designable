@@ -1,4 +1,4 @@
-import { GlobalRegistry } from '@kep-platform/core'
+import { GlobalRegistry } from '@kep-platform/designable-core'
 import icons from './icons'
 import panels from './panels'
 import global from './global'

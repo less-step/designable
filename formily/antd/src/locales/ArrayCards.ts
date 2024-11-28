@@ -1,4 +1,4 @@
-import { createLocales } from '@kep-platform/core'
+import { createLocales } from '@kep-platform/designable-core'
 import { Card } from './Card'
 
 export const ArrayCards = createLocales(Card, {

@@ -1,4 +1,4 @@
-import { TreeNode } from '@kep-platform/core'
+import { TreeNode } from '@kep-platform/designable-core'
 import React, { createContext } from 'react'
 
 interface INodeContext {

@@ -1,1 +1,1 @@
-# @kep-platform/shared
+# @kep-platform/designable-shared

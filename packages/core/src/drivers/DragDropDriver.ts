@@ -1,4 +1,4 @@
-import { EventDriver } from '@kep-platform/shared'
+import { EventDriver } from '@kep-platform/designable-shared'
 import { DragMoveEvent, DragStartEvent, DragStopEvent } from '../events'
 import { Engine } from '../models/Engine'
 

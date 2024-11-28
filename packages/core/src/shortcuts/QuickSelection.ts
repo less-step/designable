@@ -1,5 +1,5 @@
 import { Shortcut, TreeNode } from '../models'
-import { KeyCode } from '@kep-platform/shared'
+import { KeyCode } from '@kep-platform/designable-shared'
 
 const findBottomLastChild = (node: TreeNode) => {
 	if (!node) return node

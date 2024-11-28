@@ -1,5 +1,5 @@
 import { getNpmCDNRegistry } from '../registry'
-import { globalThisPolyfill } from '@kep-platform/shared'
+import { globalThisPolyfill } from '@kep-platform/designable-shared'
 export interface ILoadScriptProps {
 	package: string
 	entry: string

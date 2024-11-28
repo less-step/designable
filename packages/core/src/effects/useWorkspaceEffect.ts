@@ -1,5 +1,5 @@
 import { Engine } from '../models'
-import { ICustomEvent } from '@kep-platform/shared'
+import { ICustomEvent } from '@kep-platform/designable-shared'
 import { IEngineContext } from '../types'
 import { SelectNodeEvent } from '../events'
 

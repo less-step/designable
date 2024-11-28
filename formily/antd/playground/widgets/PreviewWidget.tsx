@@ -30,8 +30,8 @@ import {
 	ArrayCards,
 } from '@formily/antd-v5'
 import { Card, Slider, Rate } from 'antd'
-import { TreeNode } from '@kep-platform/core'
-import { transformToSchema } from '@kep-platform/formily-transformer'
+import { TreeNode } from '@kep-platform/designable-core'
+import { transformToSchema } from '@kep-platform/designable-formily-transformer'
 
 const Text: React.FC<{
 	value?: string

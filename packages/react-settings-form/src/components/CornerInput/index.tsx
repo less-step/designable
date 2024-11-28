@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { usePrefix } from '@kep-platform/react'
+import { usePrefix } from '@kep-platform/designable-react'
 import cls from 'classnames'
 import './styles.less'
 

@@ -27,11 +27,11 @@ const presets = () => {
 		'@formily/core': 'Formily.Core',
 		'@formily/json-schema': 'Formily.JSONSchema',
 		'@formily/react': 'Formily.React',
-		'@kep-platform/shared': 'Designable.Shared',
-		'@kep-platform/core': 'Designable.Core',
-		'@kep-platform/react': 'Designable.React',
-		'@kep-platform/react-sandbox': 'Designable.ReactSandbox',
-		'@kep-platform/react-settings-form': 'Designable.ReactSettingsForm',
+		'@kep-platform/designable-shared': 'Designable.Shared',
+		'@kep-platform/designable-core': 'Designable.Core',
+		'@kep-platform/designable-react': 'Designable.React',
+		'@kep-platform/designable-react-sandbox': 'Designable.ReactSandbox',
+		'@kep-platform/designable-react-settings-form': 'Designable.ReactSettingsForm',
 	}
 	return [
 		commonjs(),

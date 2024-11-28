@@ -4,9 +4,9 @@ import { useTree, usePrefix, useOutline, useWorkbench } from '../../hooks'
 import { observer } from '@formily/reactive-react'
 import { OutlineTreeNode } from './OutlineNode'
 import { Insertion } from './Insertion'
-import { TreeNode, Viewport } from '@kep-platform/core'
+import { TreeNode, Viewport } from '@kep-platform/designable-core'
 import { NodeContext } from './context'
-import { globalThisPolyfill } from '@kep-platform/shared'
+import { globalThisPolyfill } from '@kep-platform/designable-shared'
 
 export interface IOutlineTreeWidgetProps {
 	className?: string

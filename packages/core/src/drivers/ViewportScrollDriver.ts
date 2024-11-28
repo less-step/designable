@@ -1,4 +1,4 @@
-import { EventDriver, globalThisPolyfill } from '@kep-platform/shared'
+import { EventDriver, globalThisPolyfill } from '@kep-platform/designable-shared'
 import { Engine } from '../models/Engine'
 import { ViewportScrollEvent } from '../events'
 

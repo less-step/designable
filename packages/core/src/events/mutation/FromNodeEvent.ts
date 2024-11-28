@@ -1,4 +1,4 @@
-import { ICustomEvent } from '@kep-platform/shared'
+import { ICustomEvent } from '@kep-platform/designable-shared'
 import { ITreeNode, TreeNode } from '../../models'
 import { IEngineContext } from '../../types'
 

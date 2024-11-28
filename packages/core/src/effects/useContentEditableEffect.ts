@@ -1,5 +1,5 @@
 import { Path } from '@formily/path'
-import { requestIdle, globalThisPolyfill } from '@kep-platform/shared'
+import { requestIdle, globalThisPolyfill } from '@kep-platform/designable-shared'
 import { Engine, TreeNode } from '../models'
 import { MouseDoubleClickEvent, MouseClickEvent } from '../events'
 

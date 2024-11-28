@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
-import { isFn, globalThisPolyfill } from '@kep-platform/shared'
-import { useDesigner, useWorkspace, useLayout, usePrefix } from '@kep-platform/react'
+import { isFn, globalThisPolyfill } from '@kep-platform/designable-shared'
+import { useDesigner, useWorkspace, useLayout, usePrefix } from '@kep-platform/designable-react'
 import ReactDOM from 'react-dom'
 
 export interface ISandboxProps {

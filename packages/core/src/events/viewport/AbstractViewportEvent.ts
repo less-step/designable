@@ -1,5 +1,5 @@
 import { IEngineContext } from '../../types'
-import { globalThisPolyfill } from '@kep-platform/shared'
+import { globalThisPolyfill } from '@kep-platform/designable-shared'
 
 export interface IViewportEventData {
 	scrollX: number

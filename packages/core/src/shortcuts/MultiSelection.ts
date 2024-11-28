@@ -1,4 +1,4 @@
-import { KeyCode } from '@kep-platform/shared'
+import { KeyCode } from '@kep-platform/designable-shared'
 import { Shortcut } from '../models'
 export const SelectNodes = new Shortcut({
 	codes: [[KeyCode.Meta], [KeyCode.Control]],

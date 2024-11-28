@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { observer } from '@formily/reactive-react'
-import { TreeNode } from '@kep-platform/core'
+import { TreeNode } from '@kep-platform/designable-core'
 export interface INodeTitleWidgetProps {
 	node: TreeNode
 }

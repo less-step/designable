@@ -1,4 +1,4 @@
-import { isValid } from '@kep-platform/shared'
+import { isValid } from '@kep-platform/designable-shared'
 import cls from 'classnames'
 import React, { ReactNode, useEffect, useRef, useState } from 'react'
 import { usePrefix } from '../hooks'

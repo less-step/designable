@@ -1,4 +1,4 @@
-import { createLocales } from '@kep-platform/core'
+import { createLocales } from '@kep-platform/designable-core'
 import { Input } from './Input'
 
 export const Password = createLocales(Input, {

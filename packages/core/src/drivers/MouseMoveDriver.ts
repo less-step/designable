@@ -1,4 +1,4 @@
-import { EventDriver } from '@kep-platform/shared'
+import { EventDriver } from '@kep-platform/designable-shared'
 import { Engine } from '../models/Engine'
 import { MouseMoveEvent } from '../events'
 export class MouseMoveDriver extends EventDriver<Engine> {

@@ -1,9 +1,9 @@
 import React from 'react'
 import { ArrayField } from '@formily/core'
 import { observer, useField, SchemaContext, Schema, ISchema } from '@formily/react'
-import { GlobalRegistry } from '@kep-platform/core'
+import { GlobalRegistry } from '@kep-platform/designable-core'
 import { ArrayItems } from '@formily/antd-v5'
-import { FoldItem } from '@kep-platform/react-settings-form'
+import { FoldItem } from '@kep-platform/designable-react-settings-form'
 import { Select } from 'antd'
 
 export interface IValidatorSetterProps {

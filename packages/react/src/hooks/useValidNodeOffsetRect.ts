@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from 'react'
-import { TreeNode, CursorStatus, CursorDragType } from '@kep-platform/core'
-import { LayoutObserver } from '@kep-platform/shared'
+import { TreeNode, CursorStatus, CursorDragType } from '@kep-platform/designable-core'
+import { LayoutObserver } from '@kep-platform/designable-shared'
 import { useViewport } from './useViewport'
 import { useDesigner } from './useDesigner'
 

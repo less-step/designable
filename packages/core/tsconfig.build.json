@@ -3,7 +3,7 @@
 	"compilerOptions": {
 		"outDir": "./lib",
 		"paths": {
-			"@kep-platform/*": ["../*"]
+			"@kep-platform/designable-*": ["../*"]
 		},
 		"declaration": true
 	}

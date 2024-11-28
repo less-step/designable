@@ -16,13 +16,13 @@ import {
 	ViewportPanel,
 	SettingsPanel,
 	HistoryWidget,
-} from '@kep-platform/react'
-import { SettingsForm, MonacoInput } from '@kep-platform/react-settings-form'
+} from '@kep-platform/designable-react'
+import { SettingsForm, MonacoInput } from '@kep-platform/designable-react-settings-form'
 import { observer } from '@formily/react'
-import { createDesigner, createResource, createBehavior, GlobalRegistry } from '@kep-platform/core'
+import { createDesigner, createResource, createBehavior, GlobalRegistry } from '@kep-platform/designable-core'
 import { Space, Button, Radio } from 'antd'
 import { GithubOutlined } from '@ant-design/icons'
-import { Sandbox } from '@kep-platform/react-sandbox'
+import { Sandbox } from '@kep-platform/designable-react-sandbox'
 
 const RootBehavior = createBehavior({
 	name: 'Root',

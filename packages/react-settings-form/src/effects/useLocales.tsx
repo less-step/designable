@@ -1,8 +1,8 @@
 import React from 'react'
 import { isVoidField, onFieldReact } from '@formily/core'
-import { TreeNode, GlobalRegistry } from '@kep-platform/core'
-import { isStr } from '@kep-platform/shared'
-import { IconWidget } from '@kep-platform/react'
+import { TreeNode, GlobalRegistry } from '@kep-platform/designable-core'
+import { isStr } from '@kep-platform/designable-shared'
+import { IconWidget } from '@kep-platform/designable-react'
 
 const takeIcon = (message: string) => {
 	if (!isStr(message)) return

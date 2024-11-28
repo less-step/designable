@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { useViewport, useMoveHelper, useCursor, useValidNodeOffsetRect, usePrefix } from '../../hooks'
 import { observer } from '@formily/reactive-react'
-import { CursorStatus, ClosestPosition, TreeNode } from '@kep-platform/core'
+import { CursorStatus, ClosestPosition, TreeNode } from '@kep-platform/designable-core'
 import cls from 'classnames'
 interface ICoverRectProps {
 	node: TreeNode

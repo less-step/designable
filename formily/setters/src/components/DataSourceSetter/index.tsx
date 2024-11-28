@@ -1,4 +1,4 @@
-import { TextWidget } from '@kep-platform/react'
+import { TextWidget } from '@kep-platform/designable-react'
 import { Form } from '@formily/core'
 import { observable } from '@formily/reactive'
 import { observer } from '@formily/reactive-react'

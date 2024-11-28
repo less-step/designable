@@ -1,7 +1,7 @@
 import { Operation } from './Operation'
 import { TreeNode } from './TreeNode'
 import { observable, define, action } from '@formily/reactive'
-import { calcDistanceOfPointToRect, calcDistancePointToEdge, isNearAfter, isPointInRect, IPoint, Rect } from '@kep-platform/shared'
+import { calcDistanceOfPointToRect, calcDistancePointToEdge, isNearAfter, isPointInRect, IPoint, Rect } from '@kep-platform/designable-shared'
 import { DragNodeEvent, DropNodeEvent } from '../events'
 import { Viewport } from './Viewport'
 import { CursorDragType } from './Cursor'

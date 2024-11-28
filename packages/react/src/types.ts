@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { Engine, IResource, IBehavior } from '@kep-platform/core'
+import { Engine, IResource, IBehavior } from '@kep-platform/designable-core'
 
 export interface IDesignerLayoutProps {
 	prefixCls?: string

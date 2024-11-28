@@ -1,6 +1,6 @@
 import * as Core from './exports'
 export * from './exports'
-import { globalThisPolyfill } from '@kep-platform/shared'
+import { globalThisPolyfill } from '@kep-platform/designable-shared'
 
 if (globalThisPolyfill?.['Designable']?.['Core']) {
 	if (module.exports) {

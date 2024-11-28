@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconWidget } from '@kep-platform/react'
+import { IconWidget } from '@kep-platform/designable-react'
 import { BoxStyleSetter } from '../BoxStyleSetter'
 export interface IBorderRadiusStyleSetterProps {
 	value?: string

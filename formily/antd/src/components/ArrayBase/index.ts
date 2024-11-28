@@ -1,4 +1,4 @@
-import { createBehavior } from '@kep-platform/core'
+import { createBehavior } from '@kep-platform/designable-core'
 import { createFieldSchema, createVoidFieldSchema } from '../Field'
 import { AllSchemas } from '../../schemas'
 import { AllLocales } from '../../locales'

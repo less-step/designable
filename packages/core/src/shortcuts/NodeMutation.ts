@@ -1,5 +1,5 @@
 import { Shortcut, TreeNode } from '../models'
-import { KeyCode } from '@kep-platform/shared'
+import { KeyCode } from '@kep-platform/designable-shared'
 
 /**
  * 快捷删除，快捷复制粘贴
