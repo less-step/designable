@@ -1,6 +1,6 @@
 {
 	"name": "@kep-platform/designable-react-settings-form",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"homepage": "https://github.com/alibaba/designable#readme",
 	"bugs": {
 		"url": "https://github.com/alibaba/designable/issues"
@@ -23,9 +23,9 @@
 	},
 	"dependencies": {
 		"@babel/parser": "^7.14.7",
-		"@kep-platform/designable-core": "1.0.2",
-		"@kep-platform/designable-react": "1.0.2",
-		"@kep-platform/designable-shared": "1.0.2",
+		"@kep-platform/designable-core": "1.0.3",
+		"@kep-platform/designable-react": "1.0.3",
+		"@kep-platform/designable-shared": "1.0.3",
 		"@monaco-editor/react": "^4.2.1",
 		"monaco-editor": "^0.25.2",
 		"prettier": "^2.3.2",
