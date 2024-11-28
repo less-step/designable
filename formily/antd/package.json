@@ -12,6 +12,7 @@
 	"license": "MIT",
 	"type": "module",
 	"main": "lib",
+	"module": "esm",
 	"types": "esm/index.d.ts",
 	"scripts": {
 		"build": "npm run clean && npm run build:cjs && npm run build:esm && tsx copy",
