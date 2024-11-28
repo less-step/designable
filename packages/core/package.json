@@ -1,6 +1,6 @@
 {
 	"name": "@kep-platform/core",
-	"version": "1.0.0-beta.45",
+	"version": "1.0.0",
 	"homepage": "https://github.com/alibaba/designable#readme",
 	"bugs": {
 		"url": "https://github.com/alibaba/designable/issues"
@@ -22,8 +22,8 @@
 		"clean": "rimraf -rf lib esm dist"
 	},
 	"dependencies": {
-		"@kep-platform/shared": "1.0.0-beta.45",
-		"@juggle/resize-observer": "^3.3.1"
+		"@juggle/resize-observer": "^3.3.1",
+		"@kep-platform/shared": "1.0.0"
 	},
 	"devDependencies": {
 		"@formily/json-schema": "^2.0.2",

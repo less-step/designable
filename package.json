@@ -1,5 +1,6 @@
 {
 	"name": "root",
+	"version": "1.0.0",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/alibaba/designable.git"
@@ -28,15 +29,7 @@
 		"test": "jest --coverage",
 		"test:prod": "jest --coverage --silent",
 		"test:watch": "jest --watch",
-		"preversion": "npm run build && npm run lint",
-		"version": "ts-node scripts/release changelog && git add -A",
-		"version:alpha": "lerna version prerelease --preid alpha",
-		"version:beta": "lerna version prerelease --preid beta",
-		"version:major": "lerna version major",
-		"version:minor": "lerna version minor",
-		"version:patch": "lerna version patch",
-		"version:preminor": "lerna version preminor --preid beta",
-		"version:rc": "lerna version prerelease --preid rc"
+		"preversion": "npm run build && npm run lint"
 	},
 	"resolutions": {
 		"@types/react": "^18.0.0",
