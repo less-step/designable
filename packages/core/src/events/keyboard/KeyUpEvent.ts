@@ -1,6 +1,6 @@
-import { ICustomEvent } from '@designable/shared'
+import { ICustomEvent } from '@kep-platform/shared'
 import { AbstractKeyboardEvent } from './AbstractKeyboardEvent'
 
 export class KeyUpEvent extends AbstractKeyboardEvent implements ICustomEvent {
-  type = 'key:up'
+	type = 'key:up'
 }

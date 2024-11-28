@@ -1,5 +1,5 @@
 {
-	"name": "@designable/formily-transformer",
+	"name": "@kep-platform/formily-transformer",
 	"version": "1.0.0-beta.45",
 	"homepage": "https://github.com/alibaba/designable#readme",
 	"bugs": {
@@ -21,8 +21,8 @@
 		"clean": "rimraf -rf lib esm dist"
 	},
 	"dependencies": {
-		"@designable/core": "1.0.0-beta.45",
-		"@designable/shared": "1.0.0-beta.45"
+		"@kep-platform/core": "1.0.0-beta.45",
+		"@kep-platform/shared": "1.0.0-beta.45"
 	},
 	"devDependencies": {
 		"@formily/core": "^2.0.2",

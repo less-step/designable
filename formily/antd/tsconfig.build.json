@@ -1,10 +1,10 @@
 {
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./lib",
-    "paths": {
-      "@designable/*": ["../../packages/*", "../../formily/*"]
-    },
-    "declaration": true
-  }
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"outDir": "./lib",
+		"paths": {
+			"@kep-platform/*": ["../../packages/*", "../../formily/*"]
+		},
+		"declaration": true
+	}
 }

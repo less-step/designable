@@ -1,1 +1,1 @@
-# @designable/core
+# @kep-platform/core

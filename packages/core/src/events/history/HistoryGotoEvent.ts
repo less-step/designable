@@ -1,9 +1,6 @@
-import { ICustomEvent } from '@designable/shared'
+import { ICustomEvent } from '@kep-platform/shared'
 import { AbstractHistoryEvent } from './AbstractHistoryEvent'
 
-export class HistoryGotoEvent
-  extends AbstractHistoryEvent
-  implements ICustomEvent
-{
-  type = 'history:goto'
+export class HistoryGotoEvent extends AbstractHistoryEvent implements ICustomEvent {
+	type = 'history:goto'
 }

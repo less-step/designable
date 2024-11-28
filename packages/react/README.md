@@ -1,1 +1,1 @@
-# @designable/react
+# @kep-platform/react

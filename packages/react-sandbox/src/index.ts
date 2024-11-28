@@ -1,53 +1,46 @@
 import React, { useRef, useEffect } from 'react'
-import { isFn, globalThisPolyfill } from '@designable/shared'
-import {
-  useDesigner,
-  useWorkspace,
-  useLayout,
-  usePrefix,
-} from '@designable/react'
+import { isFn, globalThisPolyfill } from '@kep-platform/shared'
+import { useDesigner, useWorkspace, useLayout, usePrefix } from '@kep-platform/react'
 import ReactDOM from 'react-dom'
 
 export interface ISandboxProps {
-  style?: React.CSSProperties
-  cssAssets?: string[]
-  jsAssets?: string[]
-  scope?: any
+	style?: React.CSSProperties
+	cssAssets?: string[]
+	jsAssets?: string[]
+	scope?: any
 }
 
 export const useSandbox = (props: React.PropsWithChildren<ISandboxProps>) => {
-  const ref = useRef<HTMLIFrameElement>()
-  const appCls = usePrefix('app')
-  const designer = useDesigner()
-  const workspace = useWorkspace()
-  const layout = useLayout()
-  const cssAssets = props.cssAssets || []
-  const jsAssets = props.jsAssets || []
-  const getCSSVar = (name: string) => {
-    return getComputedStyle(
-      document.querySelector(`.${appCls}`)
-    ).getPropertyValue(name)
-  }
-  useEffect(() => {
-    if (ref.current && workspace) {
-      const styles = cssAssets
-        ?.map?.((css) => {
-          return `<link media="all" rel="stylesheet" href="${css}" />`
-        })
-        .join('\n')
-      const scripts = jsAssets
-        ?.map?.((js) => {
-          return `<script src="${js}" type="text/javascript" ></script>`
-        })
-        .join('\n')
-      ref.current.contentWindow['__DESIGNABLE_SANDBOX_SCOPE__'] = props.scope
-      ref.current.contentWindow['__DESIGNABLE_LAYOUT__'] = layout
-      ref.current.contentWindow['__DESIGNABLE_ENGINE__'] = designer
-      ref.current.contentWindow['__DESIGNABLE_WORKSPACE__'] = workspace
-      ref.current.contentWindow['Formily'] = globalThisPolyfill['Formily']
-      ref.current.contentWindow['Designable'] = globalThisPolyfill['Designable']
-      ref.current.contentDocument.open()
-      ref.current.contentDocument.write(`
+	const ref = useRef<HTMLIFrameElement>()
+	const appCls = usePrefix('app')
+	const designer = useDesigner()
+	const workspace = useWorkspace()
+	const layout = useLayout()
+	const cssAssets = props.cssAssets || []
+	const jsAssets = props.jsAssets || []
+	const getCSSVar = (name: string) => {
+		return getComputedStyle(document.querySelector(`.${appCls}`)).getPropertyValue(name)
+	}
+	useEffect(() => {
+		if (ref.current && workspace) {
+			const styles = cssAssets
+				?.map?.((css) => {
+					return `<link media="all" rel="stylesheet" href="${css}" />`
+				})
+				.join('\n')
+			const scripts = jsAssets
+				?.map?.((js) => {
+					return `<script src="${js}" type="text/javascript" ></script>`
+				})
+				.join('\n')
+			ref.current.contentWindow['__DESIGNABLE_SANDBOX_SCOPE__'] = props.scope
+			ref.current.contentWindow['__DESIGNABLE_LAYOUT__'] = layout
+			ref.current.contentWindow['__DESIGNABLE_ENGINE__'] = designer
+			ref.current.contentWindow['__DESIGNABLE_WORKSPACE__'] = workspace
+			ref.current.contentWindow['Formily'] = globalThisPolyfill['Formily']
+			ref.current.contentWindow['Designable'] = globalThisPolyfill['Designable']
+			ref.current.contentDocument.open()
+			ref.current.contentDocument.write(`
       <!DOCTYPE html>
         <head>
           ${styles}
@@ -73,9 +66,7 @@ export const useSandbox = (props: React.PropsWithChildren<ISandboxProps>) => {
             padding:0;
             overflow-anchor: none;
             user-select:none;
-            background-color:${
-              layout.theme === 'light' ? '#fff' : 'transparent'
-            } !important;
+            background-color:${layout.theme === 'light' ? '#fff' : 'transparent'} !important;
           }
           html{
             overflow-anchor: none;
@@ -90,45 +81,42 @@ export const useSandbox = (props: React.PropsWithChildren<ISandboxProps>) => {
         </body>
       </html>
       `)
-      ref.current.contentDocument.close()
-    }
-  }, [workspace])
-  return ref
+			ref.current.contentDocument.close()
+		}
+	}, [workspace])
+	return ref
 }
 
 if (globalThisPolyfill.frameElement) {
-  //解决iframe内嵌如果iframe被移除，内部React无法回收内存的问题
-  globalThisPolyfill.addEventListener('unload', () => {
-    // eslint-disable-next-line react/no-deprecated
-    ReactDOM.unmountComponentAtNode(document.getElementById('__SANDBOX_ROOT__'))
-  })
+	//解决iframe内嵌如果iframe被移除，内部React无法回收内存的问题
+	globalThisPolyfill.addEventListener('unload', () => {
+		// eslint-disable-next-line react/no-deprecated
+		ReactDOM.unmountComponentAtNode(document.getElementById('__SANDBOX_ROOT__'))
+	})
 }
 
 export const useSandboxScope = () => {
-  return globalThisPolyfill['__DESIGNABLE_SANDBOX_SCOPE__']
+	return globalThisPolyfill['__DESIGNABLE_SANDBOX_SCOPE__']
 }
 
 export const renderSandboxContent = (render: (scope?: any) => JSX.Element) => {
-  if (isFn(render)) {
-    // eslint-disable-next-line react/no-deprecated
-    ReactDOM.render(
-      render(useSandboxScope()),
-      document.getElementById('__SANDBOX_ROOT__')
-    )
-  }
+	if (isFn(render)) {
+		// eslint-disable-next-line react/no-deprecated
+		ReactDOM.render(render(useSandboxScope()), document.getElementById('__SANDBOX_ROOT__'))
+	}
 }
 
 export const Sandbox: React.FC<ISandboxProps> = (props) => {
-  const { cssAssets, jsAssets, scope, style, ...iframeProps } = props
-  return React.createElement('iframe', {
-    ...iframeProps,
-    ref: useSandbox(props),
-    style: {
-      height: '100%',
-      width: '100%',
-      border: 'none',
-      display: 'block',
-      ...style,
-    },
-  })
+	const { cssAssets, jsAssets, scope, style, ...iframeProps } = props
+	return React.createElement('iframe', {
+		...iframeProps,
+		ref: useSandbox(props),
+		style: {
+			height: '100%',
+			width: '100%',
+			border: 'none',
+			display: 'block',
+			...style,
+		},
+	})
 }

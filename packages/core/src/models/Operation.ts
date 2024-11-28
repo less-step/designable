@@ -1,4 +1,4 @@
-import { cancelIdle, ICustomEvent, isFn, requestIdle } from '@designable/shared'
+import { cancelIdle, ICustomEvent, isFn, requestIdle } from '@kep-platform/shared'
 import { Engine } from './Engine'
 import { Hover } from './Hover'
 import { MoveHelper } from './MoveHelper'

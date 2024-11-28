@@ -1,6 +1,6 @@
 import { PlusOutlined } from '@ant-design/icons'
-import { TextWidget, usePrefix } from '@designable/react'
-import { ValueInput } from '@designable/react-settings-form'
+import { TextWidget, usePrefix } from '@kep-platform/react'
+import { ValueInput } from '@kep-platform/react-settings-form'
 import { ArrayItems, Form, FormItem, Input } from '@formily/antd-v5'
 import { createForm, Form as FormCore } from '@formily/core'
 import { createSchemaField } from '@formily/react'

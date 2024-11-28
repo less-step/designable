@@ -1,4 +1,4 @@
-import { TreeNode, Engine } from '@designable/core'
+import { TreeNode, Engine } from '@kep-platform/core'
 
 export type ComponentNameMatcher = string | string[] | ((name: string, node: TreeNode, context?: any) => boolean)
 

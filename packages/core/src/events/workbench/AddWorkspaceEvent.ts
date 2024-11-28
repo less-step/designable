@@ -1,8 +1,5 @@
-import { ICustomEvent } from '@designable/shared'
+import { ICustomEvent } from '@kep-platform/shared'
 import { AbstractWorkspaceEvent } from './AbstractWorkspaceEvent'
-export class AddWorkspaceEvent
-  extends AbstractWorkspaceEvent
-  implements ICustomEvent
-{
-  type = 'add:workspace'
+export class AddWorkspaceEvent extends AbstractWorkspaceEvent implements ICustomEvent {
+	type = 'add:workspace'
 }

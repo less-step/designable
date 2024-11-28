@@ -1,9 +1,6 @@
-import { ICustomEvent } from '@designable/shared'
+import { ICustomEvent } from '@kep-platform/shared'
 import { AbstractMutationNodeEvent } from './AbstractMutationNodeEvent'
 
-export class UpdateNodePropsEvent
-  extends AbstractMutationNodeEvent
-  implements ICustomEvent
-{
-  type = 'update:node:props'
+export class UpdateNodePropsEvent extends AbstractMutationNodeEvent implements ICustomEvent {
+	type = 'update:node:props'
 }

@@ -1,4 +1,4 @@
-import { isArr } from '@designable/shared'
+import { isArr } from '@kep-platform/shared'
 import { untracked } from '@formily/reactive'
 import { mergeLocales } from './internals'
 import { Engine, TreeNode } from './models'

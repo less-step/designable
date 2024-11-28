@@ -1,4 +1,4 @@
-import { requestIdle } from '@designable/shared'
+import { requestIdle } from '@kep-platform/shared'
 import { observer } from '@formily/reactive-react'
 import cls from 'classnames'
 import React, { useEffect, useState } from 'react'

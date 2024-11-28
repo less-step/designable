@@ -16,9 +16,9 @@ import {
 	ViewPanel,
 	SettingsPanel,
 	ComponentTreeWidget,
-} from '@designable/react'
-import { SettingsForm, setNpmCDNRegistry } from '@designable/react-settings-form'
-import { createDesigner, GlobalRegistry, Shortcut, KeyCode } from '@designable/core'
+} from '@kep-platform/react'
+import { SettingsForm, setNpmCDNRegistry } from '@kep-platform/react-settings-form'
+import { createDesigner, GlobalRegistry, Shortcut, KeyCode } from '@kep-platform/core'
 import { LogoWidget, ActionsWidget, PreviewWidget, SchemaEditorWidget, MarkupSchemaWidget } from './widgets'
 import { saveSchema } from './service'
 import {
@@ -106,24 +106,7 @@ const App = () => {
 					<CompositePanel.Item title="panels.Component" icon="Component">
 						<ResourceWidget
 							title="sources.Inputs"
-							sources={[
-								Input,
-								Password,
-								NumberPicker,
-								Rate,
-								Slider,
-								Select,
-								TreeSelect,
-								Cascader,
-								Transfer,
-								Checkbox,
-								Radio,
-								DatePicker,
-								TimePicker,
-								Upload,
-								Switch,
-								ObjectContainer,
-							]}
+							sources={[Input, Password, NumberPicker, Rate, Slider, Select, TreeSelect, Cascader, Transfer, Checkbox, Radio, DatePicker, TimePicker, Upload, Switch, ObjectContainer]}
 						/>
 						<ResourceWidget title="sources.Layouts" sources={[Card, FormGrid, FormTab, FormLayout, FormCollapse, Space]} />
 						<ResourceWidget title="sources.Arrays" sources={[ArrayCards, ArrayTable]} />

@@ -1,9 +1,6 @@
-import { ICustomEvent } from '@designable/shared'
+import { ICustomEvent } from '@kep-platform/shared'
 import { AbstractHistoryEvent } from './AbstractHistoryEvent'
 
-export class HistoryUndoEvent
-  extends AbstractHistoryEvent
-  implements ICustomEvent
-{
-  type = 'history:undo'
+export class HistoryUndoEvent extends AbstractHistoryEvent implements ICustomEvent {
+	type = 'history:undo'
 }

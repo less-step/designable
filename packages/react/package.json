@@ -1,5 +1,5 @@
 {
-	"name": "@designable/react",
+	"name": "@kep-platform/react",
 	"version": "1.0.0-beta.45",
 	"homepage": "https://github.com/alibaba/designable#readme",
 	"bugs": {
@@ -23,8 +23,8 @@
 		"copy": "tsx copy.ts"
 	},
 	"dependencies": {
-		"@designable/core": "1.0.0-beta.45",
-		"@designable/shared": "1.0.0-beta.45",
+		"@kep-platform/core": "1.0.0-beta.45",
+		"@kep-platform/shared": "1.0.0-beta.45",
 		"dateformat": "^4.5.1"
 	},
 	"devDependencies": {

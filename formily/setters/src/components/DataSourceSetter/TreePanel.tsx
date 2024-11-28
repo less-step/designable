@@ -1,5 +1,5 @@
-import { GlobalRegistry } from '@designable/core'
-import { IconWidget, TextWidget } from '@designable/react'
+import { GlobalRegistry } from '@kep-platform/core'
+import { IconWidget, TextWidget } from '@kep-platform/react'
 import { observer } from '@formily/reactive-react'
 import { uid } from '@formily/shared'
 import { Button, Tree, TreeProps } from 'antd'

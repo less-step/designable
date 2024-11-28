@@ -1,6 +1,6 @@
-import { ICustomEvent } from '@designable/shared'
+import { ICustomEvent } from '@kep-platform/shared'
 import { AbstractCursorEvent } from './AbstractCursorEvent'
 
 export class DragMoveEvent extends AbstractCursorEvent implements ICustomEvent {
-  type = 'drag:move'
+	type = 'drag:move'
 }

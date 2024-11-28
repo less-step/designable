@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import { observer } from '@formily/reactive-react'
-import { DroppableWidget } from '@designable/react'
+import { DroppableWidget } from '@kep-platform/react'
 import './styles.less'
 
 export const Container: React.FC<{ children: ReactNode }> = observer((props) => {

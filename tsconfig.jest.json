@@ -1,10 +1,10 @@
 {
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "jsx": "react",
-    "paths": {
-      "@designable/*": ["./packages/*/src"]
-    }
-  },
-  "exclude": ["./packages/*/esm", "./packages/*/lib"]
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"jsx": "react",
+		"paths": {
+			"@kep-platform/*": ["./packages/*/src"]
+		}
+	},
+	"exclude": ["./packages/*/esm", "./packages/*/lib"]
 }

@@ -1,5 +1,5 @@
 {
-	"name": "@designable/formily-setters",
+	"name": "@kep-platform/formily-setters",
 	"version": "1.0.0-beta.45",
 	"homepage": "https://github.com/alibaba/designable#readme",
 	"bugs": {
@@ -22,10 +22,10 @@
 		"start": "webpack-dev-server --config ./config/webpack.dev.cjs"
 	},
 	"dependencies": {
-		"@designable/core": "1.0.0-beta.45",
-		"@designable/formily-transformer": "1.0.0-beta.45",
-		"@designable/react": "1.0.0-beta.45",
-		"@designable/react-settings-form": "1.0.0-beta.45"
+		"@kep-platform/core": "1.0.0-beta.45",
+		"@kep-platform/formily-transformer": "1.0.0-beta.45",
+		"@kep-platform/react": "1.0.0-beta.45",
+		"@kep-platform/react-settings-form": "1.0.0-beta.45"
 	},
 	"devDependencies": {
 		"@formily/antd-v5": "^1.0.0",

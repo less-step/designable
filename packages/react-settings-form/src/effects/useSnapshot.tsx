@@ -1,13 +1,13 @@
-import { Operation } from '@designable/core'
+import { Operation } from '@kep-platform/core'
 import { onFieldInputValueChange } from '@formily/core'
 
 let timeRequest = null
 
 export const useSnapshot = (operation: Operation) => {
-  onFieldInputValueChange('*', () => {
-    clearTimeout(timeRequest)
-    timeRequest = setTimeout(() => {
-      operation.snapshot('update:node:props')
-    }, 1000)
-  })
+	onFieldInputValueChange('*', () => {
+		clearTimeout(timeRequest)
+		timeRequest = setTimeout(() => {
+			operation.snapshot('update:node:props')
+		}, 1000)
+	})
 }

@@ -1,9 +1,6 @@
-import { ICustomEvent } from '@designable/shared'
+import { ICustomEvent } from '@kep-platform/shared'
 import { AbstractMutationNodeEvent } from './AbstractMutationNodeEvent'
 
-export class DropNodeEvent
-  extends AbstractMutationNodeEvent
-  implements ICustomEvent
-{
-  type = 'drop:node'
+export class DropNodeEvent extends AbstractMutationNodeEvent implements ICustomEvent {
+	type = 'drop:node'
 }
