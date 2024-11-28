@@ -1,6 +1,6 @@
 {
 	"name": "@kep-platform/designable-basic-example",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
@@ -9,13 +9,13 @@
 		"start": "webpack-dev-server --config config/webpack.dev.cjs"
 	},
 	"dependencies": {
-		"@kep-platform/designable-core": "1.0.1",
-		"@kep-platform/designable-react": "1.0.1",
-		"@kep-platform/designable-react-sandbox": "1.0.1",
-		"@kep-platform/designable-react-settings-form": "1.0.1",
-		"@kep-platform/designable-shared": "1.0.1",
 		"@formily/reactive": "^2.0.2",
 		"@formily/reactive-react": "^2.0.2",
+		"@kep-platform/designable-core": "1.0.2",
+		"@kep-platform/designable-react": "1.0.2",
+		"@kep-platform/designable-react-sandbox": "1.0.2",
+		"@kep-platform/designable-react-settings-form": "1.0.2",
+		"@kep-platform/designable-shared": "1.0.2",
 		"antd": "^5.0.0",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
