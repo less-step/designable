@@ -15,11 +15,12 @@
 	"module": "esm",
 	"types": "lib/index.d.ts",
 	"scripts": {
-		"build": "npm run clean&& npm run build:cjs && npm run build:esm && tsx ./copy.ts",
+		"build": "npm run clean&& npm run build:cjs && npm run build:esm && npm run copy ",
 		"build:cjs": "tsc --project tsconfig.build.json",
 		"build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
 		"build:umd": "rollup --config",
-		"clean": "rimraf -rf lib esm dist"
+		"clean": "rimraf -rf lib esm dist",
+		"copy": "tsx copy.ts"
 	},
 	"dependencies": {
 		"@designable/core": "1.0.0-beta.45",
