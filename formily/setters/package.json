@@ -1,33 +1,39 @@
 {
 	"name": "@designable/formily-setters",
 	"version": "1.0.0-beta.45",
-	"license": "MIT",
-	"main": "lib",
-	"type": "module",
-	"module": "esm",
+	"homepage": "https://github.com/alibaba/designable#readme",
+	"bugs": {
+		"url": "https://github.com/alibaba/designable/issues"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/alibaba/designable.git"
 	},
+	"license": "MIT",
+	"type": "module",
+	"main": "lib",
+	"module": "esm",
 	"types": "esm/index.d.ts",
-	"bugs": {
-		"url": "https://github.com/alibaba/designable/issues"
-	},
-	"homepage": "https://github.com/alibaba/designable#readme",
-	"engines": {
-		"npm": ">=3.0.0"
-	},
 	"scripts": {
-		"build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && tsx copy.ts",
+		"build": "npm run clean && npm run build:cjs && npm run build:esm && tsx copy.ts",
 		"build:cjs": "tsc --project tsconfig.build.json",
-		"build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm"
+		"build:esm": "tsc --project tsconfig.build.json --module es2015 --outDir esm",
+		"clean": "rimraf -rf lib esm dist",
+		"start": "webpack-dev-server --config ./config/webpack.dev.cjs"
+	},
+	"dependencies": {
+		"@designable/core": "1.0.0-beta.45",
+		"@designable/formily-transformer": "1.0.0-beta.45",
+		"@designable/react": "1.0.0-beta.45",
+		"@designable/react-settings-form": "1.0.0-beta.45"
 	},
 	"devDependencies": {
 		"@formily/antd-v5": "^1.0.0",
 		"@formily/core": "^2.0.2",
 		"@formily/react": "^2.0.2",
 		"@formily/shared": "^2.0.2",
-		"antd": "^5.0.0",
+		"antd": "^5.22.2",
+		"styled-components": "^6.1.13",
 		"typescript": "^5.7.2"
 	},
 	"peerDependencies": {
@@ -40,13 +46,11 @@
 		"antd": "^5.0.0",
 		"react": "^18.0.0",
 		"react-dom": ">=16.8.0",
-		"react-is": "^18.0.0"
+		"react-is": "^18.0.0",
+		"styled-components": "^6.1.13"
 	},
-	"dependencies": {
-		"@designable/core": "1.0.0-beta.45",
-		"@designable/formily-transformer": "1.0.0-beta.45",
-		"@designable/react": "1.0.0-beta.45",
-		"@designable/react-settings-form": "1.0.0-beta.45"
+	"engines": {
+		"npm": ">=3.0.0"
 	},
 	"publishConfig": {
 		"access": "public"

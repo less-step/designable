@@ -10,3 +10,5 @@ weex
 build.ts
 docs
 esm
+.umi
+formily

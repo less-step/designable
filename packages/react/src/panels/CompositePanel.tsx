@@ -1,8 +1,8 @@
-import React, { ReactNode, useEffect, useRef, useState } from 'react'
 import { isValid } from '@designable/shared'
 import cls from 'classnames'
-import { IconWidget, TextWidget } from '../widgets'
+import React, { ReactNode, useEffect, useRef, useState } from 'react'
 import { usePrefix } from '../hooks'
+import { IconWidget, TextWidget } from '../widgets'
 
 export interface ICompositePanelProps {
 	direction?: 'left' | 'right'
@@ -22,6 +22,7 @@ export interface ICompositePanelItemProps {
 	href?: string
 	onClick?: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 	extra?: React.ReactNode
+	children?: React.ReactNode
 }
 
 const parseItems = (children: React.ReactNode): React.PropsWithChildren<ICompositePanelItemProps>[] => {
