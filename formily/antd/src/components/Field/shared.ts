@@ -78,7 +78,7 @@ export const createFieldSchema = (component?: ISchema, decorator: ISchema = AllS
 					name: {
 						type: 'string',
 						'x-decorator': 'FormItem',
-						'x-component': 'Input',
+						'x-component': 'PropertySetter',
 					},
 					title: {
 						type: 'string',
