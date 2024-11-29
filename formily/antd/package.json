@@ -68,7 +68,7 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"gitHead": "2c44ae410a73f02735c63c6430e021a50e21f3ec",
+	"gitHead": "77468add1459c883cd1235e39e6678742f93954f",
 	"overrides": {
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
