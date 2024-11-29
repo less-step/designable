@@ -1,6 +1,6 @@
 {
 	"name": "@kep-platform/designable-formily-antd",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"homepage": "https://github.com/alibaba/designable#readme",
 	"bugs": {
 		"url": "https://github.com/alibaba/designable/issues"
@@ -23,10 +23,10 @@
 		"start": "webpack-dev-server --config playground/webpack.dev.cjs"
 	},
 	"dependencies": {
-		"@kep-platform/designable-core": "1.0.5",
-		"@kep-platform/designable-formily-setters": "1.0.5",
-		"@kep-platform/designable-formily-transformer": "1.0.5",
-		"@kep-platform/designable-react": "1.0.5"
+		"@kep-platform/designable-core": "1.0.6",
+		"@kep-platform/designable-formily-setters": "1.0.6",
+		"@kep-platform/designable-formily-transformer": "1.0.6",
+		"@kep-platform/designable-react": "1.0.6"
 	},
 	"devDependencies": {
 		"@formily/antd-v5": "^1.0.0",
@@ -34,7 +34,7 @@
 		"@formily/react": "^2.0.2",
 		"@formily/reactive": "^2.0.2",
 		"@formily/shared": "^2.0.2",
-		"@kep-platform/designable-react-settings-form": "1.0.5",
+		"@kep-platform/designable-react-settings-form": "1.0.6",
 		"autoprefixer": "^9.0",
 		"file-loader": "^6.0.0",
 		"fs-extra": "^8.1.0",
