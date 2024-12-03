@@ -112,10 +112,6 @@ export const createFieldSchema = (component?: ISchema, decorator: ISchema = AllS
 						'x-decorator': 'FormItem',
 						'x-component': 'ValueInput',
 					},
-					enum: {
-						'x-decorator': 'FormItem',
-						'x-component': DataSourceSetter,
-					},
 					'x-reactions': {
 						'x-decorator': 'FormItem',
 						'x-component': ReactionsSetter,
