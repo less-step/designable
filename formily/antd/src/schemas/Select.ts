@@ -1,11 +1,16 @@
 import { ISchema } from '@formily/react'
+import { DataSourceSetter } from '@kep-platform/designable-formily-setters'
 
 export const Select: ISchema = {
 	type: 'object',
 	properties: {
 		options: {
 			'x-decorator': 'FormItem',
-			'x-component': 'DataSourceSetter',
+			'x-component': DataSourceSetter,
+		},
+		request: {
+			'x-decorator': 'FormItem',
+			'x-component': 'RequestSetter',
 		},
 		mode: {
 			type: 'string',
