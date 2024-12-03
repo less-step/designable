@@ -1,6 +1,6 @@
 {
 	"name": "@kep-platform/designable-core",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"homepage": "https://github.com/alibaba/designable#readme",
 	"bugs": {
 		"url": "https://github.com/alibaba/designable/issues"
@@ -23,7 +23,7 @@
 	},
 	"dependencies": {
 		"@juggle/resize-observer": "^3.3.1",
-		"@kep-platform/designable-shared": "1.0.7"
+		"@kep-platform/designable-shared": "1.0.8"
 	},
 	"devDependencies": {
 		"@formily/json-schema": "^2.0.2",

@@ -1,6 +1,6 @@
 {
 	"name": "@kep-platform/designable-react-sandbox",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"homepage": "https://github.com/alibaba/designable#readme",
 	"bugs": {
 		"url": "https://github.com/alibaba/designable/issues"
@@ -22,8 +22,8 @@
 		"clean": "rimraf -rf lib esm dist"
 	},
 	"dependencies": {
-		"@kep-platform/designable-react": "1.0.7",
-		"@kep-platform/designable-shared": "1.0.7"
+		"@kep-platform/designable-react": "1.0.8",
+		"@kep-platform/designable-shared": "1.0.8"
 	},
 	"peerDependencies": {
 		"react": "^18.0.0"
