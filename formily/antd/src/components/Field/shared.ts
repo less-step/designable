@@ -1,5 +1,5 @@
 import { ISchema } from '@formily/json-schema'
-import { ReactionsSetter, DataSourceSetter, ValidatorSetter } from '@kep-platform/designable-formily-setters'
+import { ReactionsSetter, ValidatorSetter } from '@kep-platform/designable-formily-setters'
 import { FormItemSwitcher } from '../../common/FormItemSwitcher'
 import { AllSchemas } from '../../schemas'
 
