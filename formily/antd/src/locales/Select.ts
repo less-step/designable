@@ -7,6 +7,9 @@ export const Select = {
 					title: '选项',
 					tooltip: '选择',
 				},
+				request: {
+					title: '选项数据源',
+				},
 				mode: {
 					title: '模式',
 					dataSource: ['多选', '标签', '单选'],
