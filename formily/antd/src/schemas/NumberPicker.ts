@@ -15,12 +15,12 @@ export const NumberPicker: ISchema = {
 		},
 		prefix: {
 			type: 'string',
-			'x-decorator-props': 'FormItem',
+			'x-decorator': 'FormItem',
 			'x-component': 'Input',
 		},
 		suffix: {
 			type: 'string',
-			'x-decorator-props': 'FormItem',
+			'x-decorator': 'FormItem',
 			'x-component': 'Input',
 		},
 		max: {
