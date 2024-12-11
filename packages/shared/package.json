@@ -1,6 +1,6 @@
 {
 	"name": "@kep-platform/designable-shared",
-	"version": "1.0.11",
+	"version": "1.0.12",
 	"homepage": "https://github.com/alibaba/designable#readme",
 	"bugs": {
 		"url": "https://github.com/alibaba/designable/issues"
